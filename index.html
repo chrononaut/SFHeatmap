@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>SF Heat Map</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="gradient">
+      <h1>SF Crime Heat Map</h1>
+    </header>
+    <div id="gmap"></div>
+    <footer class="gradient">
+    	<div id="label">
+        <span>Filters:</span>
+      </div>
+      <div class="dropdown-wrapper" id="year">
+        <span class="dropdown-name">Year</span>
+        <span class="dropdown-selection"></span>
+        <span class="dropdown-arrow">&#9650;</span>
+          <ul class="dropdown-content">
+            <li><a>2003</a></li>
+            <li><a>2004</a></li>
+            <li><a>2005</a></li>
+            <li><a>2006</a></li>
+            <li><a>2007</a></li>
+            <li><a>2008</a></li>
+            <li><a>2009</a></li>
+            <li><a>2010</a></li>
+            <li><a>2011</a></li>
+            <li><a>2012</a></li>
+            <li><a>2013</a></li>
+            <li><a>2014</a></li>
+            <li><a>2015</a></li>
+            <li><a>2016</a></li>
+          </ul>
+      </div>
+      <div class="dropdown-wrapper" id="month">
+        <span class="dropdown-name">Month</span>
+        <span class="dropdown-selection"></span>
+        <span class="dropdown-arrow">&#9650;</span>
+          <ul class="dropdown-content">
+            <li><a>Jan</a></li>
+            <li><a>Feb</a></li>
+            <li><a>Mar</a></li>
+            <li><a>Apr</a></li>
+            <li><a>May</a></li>
+            <li><a>Jun</a></li>
+            <li><a>Jul</a></li>
+            <li><a>Aug</a></li>
+            <li><a>Sep</a></li>
+            <li><a>Oct</a></li>
+            <li><a>Nov</a></li>
+            <li><a>Dec</a></li>
+          </ul>
+      </div>
+      <div class="dropdown-wrapper" id="crime">
+        <span class="dropdown-name">Crime</span>
+        <span class="dropdown-selection"></span>
+        <span class="dropdown-arrow">&#9650;</span>
+          <ul class="dropdown-content" id="crime-content">
+            <li><a>All</a></li>
+            <li><a>Arson</a></li>
+            <li><a>Assault</a></li>
+            <li><a>Burglary</a></li>
+            <li><a>Disorder</a></li>
+            <li><a>Drugs</a></li>
+            <li><a>Kidnapping</a></li>
+            <li><a>Larceny/Theft</a></li>
+            <li><a>Other</a></li>
+            <li><a>Robbery</a></li>
+            <li><a>Sex Offenses</a></li>
+            <li><a>Vandalism</a></li>
+            <li><a>Vehicle Theft</a></li>
+            <li><a>Weapon Related</a></li>
+          </ul>
+      </div>
+      <div id="apply">
+      <button type="button" id="apply-button" disabled>Apply</button>
+      </div>
+    </footer>
+    <script>
+      function loader() {
+      	var script = document.createElement("script");
+        script.src = "main.js";
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOVhZgFnpMqN-lU8jnukm0CO9TC9L6FP8&libraries=visualization&callback=loader" async>
+    </script>
+  </body>
+</html>
