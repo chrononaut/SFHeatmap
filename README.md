@@ -3,4 +3,4 @@ A map of San Francisco with a heat overlay showing the crimes that took place si
 
 ## Usage
 
-Visit [this link](chrononaut.github.io/SFHeatmap) to view the live web page.
+Visit [this link](http://chrononaut.github.io/SFHeatmap) to view the live web page.
