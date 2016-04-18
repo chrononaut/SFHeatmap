@@ -3,4 +3,4 @@ A map of San Francisco with a heat overlay showing the crimes that took place si
 
 ## Usage
 
-Visit [this link](http://chrononaut.github.io/SFHeatmap) to view the live web page. Simply select the appropriate filters and click the "apply" button.
+Visit [this link](http://chrononaut.github.io/SFHeatmap) to view the live web page. Simply select the appropriate filters and click the "apply" button. If you experience any choppy or rough panning/scrolling, try enabling hardware acceleration within the browser settings.
